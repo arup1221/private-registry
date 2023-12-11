@@ -3,7 +3,7 @@ version: '3'
 services:
   registry:
     image: registry:2
+    container_name: my-private-registry
     ports:
-      - "8080:8080"
-    environment:
-      REGISTRY_HTTP_TLS_DISABLED: "true"
+      - "5001:5000"
+    
