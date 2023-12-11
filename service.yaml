@@ -5,8 +5,9 @@ metadata:
   name: myplugin-service
   namespace: portal
 spec:
-  selector:
-    app: myplugin
+  matchLabels:
+      app-v1: myplugin,
+      app-v2: myplugin-v2
   ports:
     - protocol: TCP
       port: 80
